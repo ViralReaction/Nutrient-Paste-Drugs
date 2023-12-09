@@ -3,9 +3,9 @@
 		<li>/</li>
 		<li>1.4</li>
 		<li IfModActive="OskarPotocki.VFE.Classical">1.4/Mods/VFE_Classical</li>		
-		<li IfModActive="OskarPotocki.VFE.Insectoid">>1.4/Mods/VFE_Insectoid</li>
-		<li IfModActive="VanillaExpanded.VBrewE">>1.4/Mods/VE_Brewing</li>
+		<li IfModActive="OskarPotocki.VFE.Insectoid">1.4/Mods/VFE_Insectoid</li>
+		<li IfModActive="VanillaExpanded.VBrewE">1.4/Mods/VE_Brewing</li>
 		<li IfModActive="Mlie.DThermodynamicsHotMeals">1.4/Mods/HotMeals</li>
-		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech/</li>
 	</v1.4>
 </loadFolders>

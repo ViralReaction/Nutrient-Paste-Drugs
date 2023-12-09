@@ -29,7 +29,6 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>VFEI_RoyalJellyChemical</chemical>
 				<chemical>VFEC_Opium</chemical>
 				<addictiveness>0.09</addictiveness>
 				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
