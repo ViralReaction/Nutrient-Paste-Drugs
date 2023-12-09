@@ -265,13 +265,7 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>LuciferiumHigh</hediffDef>
 					<severity>0.10</severity>
-					<toleranceChemical>Ambrosia</toleranceChemical>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-				  <hediffDef>AmbrosiaTolerance</hediffDef>
-				  <severity>0.0032</severity>
-				  <divideByBodySize>true</divideByBodySize>
-				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -302,6 +296,12 @@
 					<hediffDef>AmbrosiaHigh</hediffDef>
 					<severity>0.05</severity>
 					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>AmbrosiaTolerance</hediffDef>
+				  <severity>0.0032</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
 			</outcomeDoers>
 		</ingestible>
