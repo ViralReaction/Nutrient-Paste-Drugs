@@ -9,6 +9,7 @@
 		</graphicData>
 		<stackLimit>75</stackLimit>
 		<statBases>
+			<WorkToMake>1000</WorkToMake>
 			<MarketValue>5</MarketValue>
 			<Mass>0.1</Mass>
 			<Nutrition>0.8</Nutrition>
@@ -56,7 +57,8 @@
 		<label>Nutrient Bar with Psychite</label>
 		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with psychite.</description>
 		<graphicData>
-			<!--<color>(111,131,71)</color>-->
+			<texPath>Things/Item/Drug/Nutrient_Bar_Blank</texPath>
+			<color>(221, 219, 211)</color>
 		</graphicData>
 		<statBases>
 			<WorkToMake>1000</WorkToMake>
@@ -99,7 +101,8 @@
 		<label>Nutrient Bar with Smokeleaf</label>
 		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with smokeleaf.</description>
 		<graphicData>
-			<!--<color>(111,131,71)</color>-->
+			<texPath>Things/Item/Drug/Nutrient_Bar_Blank</texPath>
+			<color>(100, 115, 16)</color>
 		</graphicData>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
@@ -139,7 +142,8 @@
 		<label>Nutrient Bar with Go-juice</label>
 		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with Go-juice.</description>
 		<graphicData>
-			<!--<color>(111,131,71)</color>-->
+			<texPath>Things/Item/Drug/Nutrient_Bar_Blank</texPath>
+			<color>(160, 219, 173)</color>
 		</graphicData>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
@@ -177,7 +181,8 @@
 		<label>Nutrient Bar with Wake-up</label>
 		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with Wake-up.</description>
 		<graphicData>
-			<!--<color>(111,131,71)</color>-->
+			<texPath>Things/Item/Drug/Nutrient_Bar_Blank</texPath>
+			<color>(201, 143, 19)</color>
 		</graphicData>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
@@ -249,7 +254,6 @@
 		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with luciferium. WARNING: Will cause addiction to luciferium!</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Nutrient_Bar_Luciferium</texPath>
-			<!--<color>(111,131,71)</color>-->
 		</graphicData>
 		<statBases>
 			<WorkToMake>1000</WorkToMake>
@@ -261,7 +265,13 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>LuciferiumHigh</hediffDef>
 					<severity>0.10</severity>
-					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+					<toleranceChemical>Ambrosia</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>AmbrosiaTolerance</hediffDef>
+				  <severity>0.0032</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -271,6 +281,37 @@
 				<addictiveness>1.00</addictiveness>
 				<needLevelOffset>0.09</needLevelOffset>
 				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Ambrosia</defName>
+		<label>Nutrient Bar with Ambrosia</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with ambrosia.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar_Blank</texPath>
+			<color>(231, 223, 156)</color>
+		</graphicData>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.05</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AmbrosiaHigh</hediffDef>
+					<severity>0.05</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Ambrosia</chemical>
+				<addictiveness>0.001</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.01</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
 				<listOrder>500</listOrder>
 			</li>
 		</comps>

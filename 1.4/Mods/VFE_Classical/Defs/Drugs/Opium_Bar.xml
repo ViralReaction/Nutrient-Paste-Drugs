@@ -6,7 +6,8 @@
 		<label>Nutrient Bar with Opium</label>
 		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with opium.</description>
 		<graphicData>
-			<!--<color>(111,131,71)</color>-->
+			<texPath>Things/Item/Drug/Nutrient_Bar_Blank</texPath>
+			<color>(112, 68, 27)</color>
 		</graphicData>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>

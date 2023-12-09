@@ -327,4 +327,51 @@
 		</researchPrerequisites>
 	</RecipeDef>
 
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Ambrosia</defName>
+		<label>make ten nutrient bars with ambrosia</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with ambrosia.</description>
+		<jobString>Making nutrient bars with ambrosia.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>5000</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ambrosia</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>Ambrosia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Ambrosia>10</Nutrient_Bar_Ambrosia>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
 </Defs>
