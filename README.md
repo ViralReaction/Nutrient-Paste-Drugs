@@ -1,5 +1,5 @@
 # Nutrient-Paste-Drugs
-Updated Fork of https://steamcommunity.com/sharedfiles/filedetails/?id=2884508615[BK's Nutrient Bars! by Brent Karman](https://steamcommunity.com/sharedfiles/filedetails/?id=2884508615)
+Updated Fork of [BK's Nutrient Bars! by Brent Karman](https://steamcommunity.com/sharedfiles/filedetails/?id=2884508615)
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
