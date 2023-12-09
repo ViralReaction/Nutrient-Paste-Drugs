@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar</defName>
+		<label>Nutrient Bar</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar_Psychite</defName>
+		<label>Nutrient Bar with Psychite</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with psychite.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+            <joy>0.08</joy>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>YayoHigh</hediffDef>
+				<severity>0.075</severity>
+				<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>0.04</offset>
+				<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>PsychiteTolerance</hediffDef>
+				<severity>0.0040</severity>
+				<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.001</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar_SmokeLeaf</defName>
+		<label>Nutrient Bar with Smokeleaf</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with smokeleaf.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+            <joy>0.08</joy>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafHigh</hediffDef>
+				<severity>0.05</severity>
+				<toleranceChemical>Smokeleaf</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>-0.01</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafTolerance</hediffDef>
+				<severity>0.003</severity>
+				<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Smokeleaf</chemical>
+				<addictiveness>0.002</addictiveness>
+				<minToleranceToAddict>0.015</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.006</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar_GoJuice</defName>
+		<label>Nutrient Bar with Go-juice</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with Go-juice.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+            <joy>0.08</joy>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>GoJuiceHigh</hediffDef>
+				<severity>0.05</severity>
+				<toleranceChemical>GoJuice</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>0.04</offset>
+				<toleranceChemical>GoJuice</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+				<offset>0.015</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>GoJuice</chemical>
+				<addictiveness>0.0026</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar_WakeUp</defName>
+		<label>Nutrient Bar with Wake-up</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with Wake-up.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+            <joy>0.04</joy>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>WakeUpHigh</hediffDef>
+				<severity>0.075</severity>
+				<toleranceChemical>WakeUp</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>0.1</offset>
+				<toleranceChemical>WakeUp</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>WakeUp</chemical>
+				<addictiveness>0.002</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar_Alcohol</defName>
+		<label>Nutrient Bar with Alcohol</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with alcohol.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+            <joy>0.02</joy>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>AlcoholHigh</hediffDef>
+				<severity>0.015</severity>
+				<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>AlcoholTolerance</hediffDef>
+				<severity>0.0016</severity>
+				<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>Nutrient_Bar_Hemogen</defName>
+		<label>Nutrient Bar with Hemogen</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with hemogen.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar_Hemogen</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<color>(102,0,0)</color>-->
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.1</Mass>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>250</baseIngestTicks>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<useEatingSpeedStat>true</useEatingSpeedStat>
+			<outcomeDoers>
+                <li Class="IngestionOutcomeDoer_OffsetHemogen">
+                    <offset>0.1</offset>
+                </li>
+            </outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

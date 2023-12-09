@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      
+      <li>
+        <name>nutrient bar</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>chocolate</name>
+        <type>NonPerishable</type>
+      </li>
+      
+    </Meals>
+  </Operation>
+</Patch>

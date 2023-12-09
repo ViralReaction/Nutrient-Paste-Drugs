@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>BK's Nutrient Bars!</name>
+	<author>Brent Kerman</author>
+	<packageId>BK.NutrientBars</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>VanillaExpanded.VNutrientE</packageId>
+			<displayName>Vanilla Nutrient Paste Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2920385763</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadBefore/>
+	<loadAfter/>
+	<incompatibleWith/>	
+	
+	<description>
+		Compress nutrient paste into nutrient bars, portable, non-spoiling nutrition.
+	</description>
+</ModMetaData>
