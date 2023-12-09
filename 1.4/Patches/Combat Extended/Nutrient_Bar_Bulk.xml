@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[@Name="VR_NutrientBarBase"]/statBases</xpath>
+                    <value>
+                        <value>
+							<Bulk>0.25</Bulk>
+						</value>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+
+    </Operation>
+</Patch>
