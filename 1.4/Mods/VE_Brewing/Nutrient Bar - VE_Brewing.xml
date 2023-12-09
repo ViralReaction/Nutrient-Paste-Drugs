@@ -21,7 +21,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.06</joy>
+			<joy>0.06</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -30,7 +30,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -47,7 +47,7 @@
 					<hediffDef>VBE_CaffeineTolerance</hediffDef>
 					<severity>0.0016</severity>
 					<divideByBodySize>true</divideByBodySize>
-				</li> 
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<comps>
@@ -60,53 +60,53 @@
 				<listOrder>500</listOrder>
 			</li>
 		</comps>
-	</ThingDef>	
+	</ThingDef>
 
 	<RecipeDef>
-    <defName>Make_Nutrient_Bar_Caffeine</defName>
-    <label>make ten nutrient bars with caffeine</label>
-    <description>Cut a nutrient block into nutrient bars, and infusing them with caffeine.</description>
-    <jobString>Making nutrient bars with caffeine.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Drug</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <workAmount>2500</workAmount>
-    <targetCountAdjustment>1</targetCountAdjustment>
-	<recipeUsers>
-		<li>DrugLab</li>
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Nutrient_Block</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-		</li>
-		<li>
-		<filter>
-          <thingDefs>
-            <li>VBE_RawCoffee</li>
-          </thingDefs>
-        </filter>
-        <count>25</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Nutrient_Block</li>
-		<li>VBE_RawCoffee</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Nutrient_Bar_Caffeine>10</Nutrient_Bar_Caffeine>
-    </products>
-	<researchPrerequisites>
-		<li>NutrientPaste</li>
-	</researchPrerequisites>
+		<defName>Make_Nutrient_Bar_Caffeine</defName>
+		<label>make ten nutrient bars with caffeine</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with caffeine.</description>
+		<jobString>Making nutrient bars with caffeine.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VBE_RawCoffee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Caffeine>10</Nutrient_Bar_Caffeine>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
 	</RecipeDef>
 	
 	<ThingDef ParentName="DrugBase">
@@ -129,7 +129,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.03</joy>
+			<joy>0.03</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -138,7 +138,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -169,52 +169,52 @@
 				<listOrder>500</listOrder>
 			</li>
 		</comps>
-	</ThingDef>	
+	</ThingDef>
 
 	<RecipeDef>
-    <defName>Make_Nutrient_Bar_Tobacco</defName>
-    <label>make ten nutrient bars with tobacco</label>
-    <description>Cut a nutrient block into nutrient bars, and infusing them with tobacco.</description>
-    <jobString>Making nutrient bars with tobacco.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Drug</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <workAmount>2500</workAmount>
-    <targetCountAdjustment>1</targetCountAdjustment>
-	<recipeUsers>
-		<li>DrugLab</li>
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Nutrient_Block</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-		</li>
-		<li>
-		<filter>
-          <thingDefs>
-            <li>VBE_RawTobacco</li>
-          </thingDefs>
-        </filter>
-        <count>25</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Nutrient_Block</li>
-		<li>VBE_RawTobacco</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Nutrient_Bar_Tobacco>10</Nutrient_Bar_Tobacco>
-    </products>
-	<researchPrerequisites>
-		<li>NutrientPaste</li>
-	</researchPrerequisites>
+		<defName>Make_Nutrient_Bar_Tobacco</defName>
+		<label>make ten nutrient bars with tobacco</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with tobacco.</description>
+		<jobString>Making nutrient bars with tobacco.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VBE_RawTobacco</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Tobacco>10</Nutrient_Bar_Tobacco>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
 	</RecipeDef>
 </Defs>

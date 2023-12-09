@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealBase">
+		<defName>Nutrient_Block</defName>
+		<label>Nutrient Block</label>
+		<description>A block of compressed nutrient paste.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Block</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<Mass>0.5</Mass>
+			<!--<Nutrition>5.0</Nutrition>-->
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<!--tasteThought>NutrientBlockEaten</tasteThought-->
+		</ingestible>
+	</ThingDef>
+
+</Defs>

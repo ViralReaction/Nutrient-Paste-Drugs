@@ -21,7 +21,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.016</joy>
+			<joy>0.016</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -30,7 +30,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -39,17 +39,17 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>VFEI_RoyalJellyHigh</hediffDef>
-				<severity>0.10</severity>
-				<toleranceChemical>VFEI_RoyalJellyChemical</toleranceChemical>
+					<hediffDef>VFEI_RoyalJellyHigh</hediffDef>
+					<severity>0.10</severity>
+					<toleranceChemical>VFEI_RoyalJellyChemical</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>VFEI_RoyalJellyTolerance</hediffDef>
-				<severity>0.0032</severity>
-				<divideByBodySize>true</divideByBodySize>
+					<hediffDef>VFEI_RoyalJellyTolerance</hediffDef>
+					<severity>0.0032</severity>
+					<divideByBodySize>true</divideByBodySize>
 				</li>
 				<li Class="VFEI.IngestionOutcomeDoer_Immunity">
-				<percent>0.5</percent>
+					<percent>0.5</percent>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -64,52 +64,52 @@
 				<listOrder>500</listOrder>
 			</li>
 		</comps>
-	</ThingDef>	
+	</ThingDef>
 
-		<RecipeDef>
-    <defName>Make_Nutrient_Bar_RoyalInsectJelly</defName>
-    <label>make ten nutrient bars with royal insect jelly</label>
-    <description>Cut a nutrient block into nutrient bars, and infusing them with royal insect jelly.</description>
-    <jobString>Making nutrient bars with royal insect jelly.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Drug</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <workAmount>2500</workAmount>
-    <targetCountAdjustment>1</targetCountAdjustment>
-	<recipeUsers>
-		<li>DrugLab</li>
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Nutrient_Block</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-		</li>
-		<li>
-		<filter>
-          <thingDefs>
-            <li>VFEI_RoyalInsectJelly</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Nutrient_Block</li>
-		<li>VFEI_RoyalInsectJelly</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Nutrient_Bar_RoyalInsectJelly>10</Nutrient_Bar_RoyalInsectJelly>
-    </products>
-	<researchPrerequisites>
-		<li>NutrientPaste</li>
-	</researchPrerequisites>
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_RoyalInsectJelly</defName>
+		<label>make ten nutrient bars with royal insect jelly</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with royal insect jelly.</description>
+		<jobString>Making nutrient bars with royal insect jelly.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VFEI_RoyalInsectJelly</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VFEI_RoyalInsectJelly</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_RoyalInsectJelly>10</Nutrient_Bar_RoyalInsectJelly>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
 	</RecipeDef>
 </Defs>

@@ -21,7 +21,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.06</joy>
+			<joy>0.06</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -30,7 +30,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -39,14 +39,14 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>VFEC_OpiumHigh</hediffDef>
-				<severity>0.075</severity>
-				<toleranceChemical>VFEC_Opium</toleranceChemical>
+					<hediffDef>VFEC_OpiumHigh</hediffDef>
+					<severity>0.075</severity>
+					<toleranceChemical>VFEC_Opium</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>VFEC_OpiumTolerance</hediffDef>
-				<severity>0.004</severity>
-				<divideByBodySize>true</divideByBodySize>
+					<hediffDef>VFEC_OpiumTolerance</hediffDef>
+					<severity>0.004</severity>
+					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -61,52 +61,52 @@
 				<listOrder>500</listOrder>
 			</li>
 		</comps>
-	</ThingDef>	
+	</ThingDef>
 
-		<RecipeDef>
-    <defName>Make_Nutrient_Bar_Opium</defName>
-    <label>make ten nutrient bars with opium</label>
-    <description>Cut a nutrient block into nutrient bars, and infusing them with opium.</description>
-    <jobString>Making nutrient bars with opium.</jobString>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Drug</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <workAmount>1000</workAmount>
-    <targetCountAdjustment>1</targetCountAdjustment>
-	<recipeUsers>
-		<li>DrugLab</li>
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Nutrient_Block</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-		</li>
-		<li>
-		<filter>
-          <thingDefs>
-            <li>VFEC_Opium</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Nutrient_Block</li>
-		<li>VFEC_Opium</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Nutrient_Bar_Opium>10</Nutrient_Bar_Opium>
-    </products>
-	<researchPrerequisites>
-		<li>NutrientPaste</li>
-	</researchPrerequisites>
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Opium</defName>
+		<label>make ten nutrient bars with opium</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with opium.</description>
+		<jobString>Making nutrient bars with opium.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1000</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VFEC_Opium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VFEC_Opium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Opium>10</Nutrient_Bar_Opium>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
 	</RecipeDef>
 </Defs>

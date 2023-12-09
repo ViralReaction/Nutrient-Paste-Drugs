@@ -26,7 +26,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -62,7 +62,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.08</joy>
+			<joy>0.08</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -71,7 +71,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -80,19 +80,19 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>YayoHigh</hediffDef>
-				<severity>0.075</severity>
-				<toleranceChemical>Psychite</toleranceChemical>
+					<hediffDef>YayoHigh</hediffDef>
+					<severity>0.075</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>0.04</offset>
-				<toleranceChemical>Psychite</toleranceChemical>
+					<need>Rest</need>
+					<offset>0.04</offset>
+					<toleranceChemical>Psychite</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>PsychiteTolerance</hediffDef>
-				<severity>0.0040</severity>
-				<divideByBodySize>true</divideByBodySize>
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<severity>0.0040</severity>
+					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -127,7 +127,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.08</joy>
+			<joy>0.08</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -136,7 +136,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -145,18 +145,18 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>SmokeleafHigh</hediffDef>
-				<severity>0.05</severity>
-				<toleranceChemical>Smokeleaf</toleranceChemical>
+					<hediffDef>SmokeleafHigh</hediffDef>
+					<severity>0.05</severity>
+					<toleranceChemical>Smokeleaf</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.01</offset>
+					<need>Rest</need>
+					<offset>-0.01</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>SmokeleafTolerance</hediffDef>
-				<severity>0.003</severity>
-				<divideByBodySize>true</divideByBodySize>
+					<hediffDef>SmokeleafTolerance</hediffDef>
+					<severity>0.003</severity>
+					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -192,7 +192,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.08</joy>
+			<joy>0.08</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -201,7 +201,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -210,17 +210,17 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>GoJuiceHigh</hediffDef>
-				<severity>0.05</severity>
-				<toleranceChemical>GoJuice</toleranceChemical>
+					<hediffDef>GoJuiceHigh</hediffDef>
+					<severity>0.05</severity>
+					<toleranceChemical>GoJuice</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>0.04</offset>
-				<toleranceChemical>GoJuice</toleranceChemical>
+					<need>Rest</need>
+					<offset>0.04</offset>
+					<toleranceChemical>GoJuice</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-				<offset>0.015</offset>
+					<offset>0.015</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -255,7 +255,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.04</joy>
+			<joy>0.04</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -264,7 +264,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -273,14 +273,14 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>WakeUpHigh</hediffDef>
-				<severity>0.075</severity>
-				<toleranceChemical>WakeUp</toleranceChemical>
+					<hediffDef>WakeUpHigh</hediffDef>
+					<severity>0.075</severity>
+					<toleranceChemical>WakeUp</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>0.1</offset>
-				<toleranceChemical>WakeUp</toleranceChemical>
+					<need>Rest</need>
+					<offset>0.1</offset>
+					<toleranceChemical>WakeUp</toleranceChemical>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -315,7 +315,7 @@
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<joyKind>Chemical</joyKind>
-            <joy>0.02</joy>
+			<joy>0.02</joy>
 			<preferability>DesperateOnly</preferability>
 			<foodType>Processed</foodType>
 			<nurseable>true</nurseable>
@@ -324,7 +324,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -333,14 +333,14 @@
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>AlcoholHigh</hediffDef>
-				<severity>0.015</severity>
-				<toleranceChemical>Alcohol</toleranceChemical>
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.015</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>AlcoholTolerance</hediffDef>
-				<severity>0.0016</severity>
-				<divideByBodySize>true</divideByBodySize>
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<severity>0.0016</severity>
+					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -383,7 +383,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestHoldOffsetStanding>
 				<northDefault>
-				<offset>(0.21,0,0.05)</offset>
+					<offset>(0.21,0,0.05)</offset>
 				</northDefault>
 			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -391,10 +391,10 @@
 			<ingestReportString>Eating {0}.</ingestReportString>
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<outcomeDoers>
-                <li Class="IngestionOutcomeDoer_OffsetHemogen">
-                    <offset>0.1</offset>
-                </li>
-            </outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetHemogen">
+					<offset>0.1</offset>
+				</li>
+			</outcomeDoers>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
