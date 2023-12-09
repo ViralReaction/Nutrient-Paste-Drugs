@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Caffeine</defName>
+		<label>Nutrient Bar with Caffeine</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with coffee beans to add caffeine.</description>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.06</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_HotCoffeeHigh</hediffDef>
+					<severity>0.1</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_CaffeineTolerance</hediffDef>
+					<severity>0.0016</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Caffeine</chemical>
+				<addictiveness>0.0005</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Tobacco</defName>
+		<label>Nutrient Bar with Tobacco</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with tobacco.</description>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.03</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_TobaccoHigh</hediffDef>
+					<severity>0.1</severity>
+					<toleranceChemical>VBE_Tobacco</toleranceChemical>
+				</li>
+				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_TobaccoTolerance</hediffDef>
+					<severity>0.003</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Tobacco</chemical>
+				<addictiveness>0.0035</addictiveness>
+				<existingAddictionSeverityOffset>0.006</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Opium</defName>
+		<label>Nutrient Bar with Opium</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with opium.</description>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+		</statBases>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.06</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VFEC_OpiumHigh</hediffDef>
+					<severity>0.075</severity>
+					<toleranceChemical>VFEC_Opium</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VFEC_OpiumTolerance</hediffDef>
+					<severity>0.004</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VFEI_RoyalJellyChemical</chemical>
+				<chemical>VFEC_Opium</chemical>
+				<addictiveness>0.09</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

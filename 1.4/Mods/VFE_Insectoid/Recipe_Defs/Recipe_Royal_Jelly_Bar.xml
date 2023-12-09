@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_RoyalInsectJelly</defName>
+		<label>make ten nutrient bars with royal insect jelly</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with royal insect jelly.</description>
+		<jobString>Making nutrient bars with royal insect jelly.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VFEI_RoyalInsectJelly</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VFEI_RoyalInsectJelly</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_RoyalInsectJelly>10</Nutrient_Bar_RoyalInsectJelly>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+</Defs>

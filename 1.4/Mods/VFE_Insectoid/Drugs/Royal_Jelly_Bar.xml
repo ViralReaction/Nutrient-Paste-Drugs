@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_RoyalInsectJelly</defName>
+		<label>Nutrient Bar with Royal Insect Jelly</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with royal insect jelly.</description>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.016</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VFEI_RoyalJellyHigh</hediffDef>
+					<severity>0.10</severity>
+					<toleranceChemical>VFEI_RoyalJellyChemical</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VFEI_RoyalJellyTolerance</hediffDef>
+					<severity>0.0032</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="VFEI.IngestionOutcomeDoer_Immunity">
+					<percent>0.5</percent>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VFEI_RoyalJellyChemical</chemical>
+				<addictiveness>0.0035</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

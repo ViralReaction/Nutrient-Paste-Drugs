@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Caffeine</defName>
+		<label>make ten nutrient bars with caffeine</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with caffeine.</description>
+		<jobString>Making nutrient bars with caffeine.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VBE_RawCoffee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Caffeine>10</Nutrient_Bar_Caffeine>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Tobacco</defName>
+		<label>make ten nutrient bars with tobacco</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with tobacco.</description>
+		<jobString>Making nutrient bars with tobacco.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>VBE_RawTobacco</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Tobacco>10</Nutrient_Bar_Tobacco>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+</Defs>
