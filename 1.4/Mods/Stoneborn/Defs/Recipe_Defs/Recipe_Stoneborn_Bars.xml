@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Alkahest</defName>
+		<label>make ten nutrient bars with alkahest</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with alkahest.</description>
+		<jobString>Making nutrient bars with alkahest.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SD_Alkahest</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>SD_Alkahest</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Alkahest>10</Nutrient_Bar_Alkahest>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Bladeroot</defName>
+		<label>make ten nutrient bars with bladeroot</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with bladeroot.</description>
+		<jobString>Making nutrient bars with bladeroot.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SD_RawBladeroot</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>SD_RawBladeroot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_Bladeroot>10</Nutrient_Bar_Bladeroot>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_Glimmerquartz</defName>
+		<label>make ten nutrient bars with glimmer quartz</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with glimmer quartz.</description>
+		<jobString>Making nutrient bars with bladeroot.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SD_Glimmerquartz</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>SD_Glimmerquartz</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_GlimmerQuartz>10</Nutrient_Bar_GlimmerQuartz>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_MinerDelight</defName>
+		<label>make ten nutrient bars with miner's delight</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with miner's delight.</description>
+		<jobString>Making nutrient bars with miner's delight.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SD_MinersDelight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>SD_MinersDelight</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_MinerDelight>10</Nutrient_Bar_MinerDelight>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_Nutrient_Bar_RageElixir</defName>
+		<label>make ten nutrient bars with rage elixir</label>
+		<description>Cut a nutrient block into nutrient bars, and infusing them with rage elixir.</description>
+		<jobString>Making nutrient bars with rage elixir.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Nutrient_Block</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SD_RageElixir</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Nutrient_Block</li>
+				<li>SD_RageElixir</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Nutrient_Bar_RageElixir>10</Nutrient_Bar_RageElixir>
+		</products>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+</Defs>

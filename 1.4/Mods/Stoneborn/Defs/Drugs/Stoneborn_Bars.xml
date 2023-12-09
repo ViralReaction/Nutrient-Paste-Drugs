@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Alkahest</defName>
+		<label>Nutrient Bar with Luciferium</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with alkahest. WARNING: Will cause addiction to alkahest!</description>
+		<descriptionHyperlinks>
+          <HediffDef>SD_AlkahestHigh</HediffDef>
+          <HediffDef>SD_AlkahestAddiction</HediffDef>
+        </descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar_Luciferium</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.06</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SD_GreenVeins</hediffDef>
+					<severity>0.028</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SD_AlkahestHigh</hediffDef>
+				  <severity>0.1</severity>
+				  <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Rest</need>
+				  <offset>0.075</offset>
+				</li>				
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>SD_Alkahest</chemical>
+				<addictiveness>1.00</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+				<listOrder>1009</listOrder>
+			 </li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Bladeroot</defName>
+		<label>Nutrient Bar with Bladeroot</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with bladeroot.</description>
+		<descriptionHyperlinks>
+		  <HediffDef>SD_BladerootHigh</HediffDef>
+		  <HediffDef>SD_BladerootTolerance</HediffDef>
+		  <HediffDef>SD_BladerootAddiction</HediffDef>
+		  <HediffDef>Carcinoma</HediffDef>
+		  <HediffDef>Asthma</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.08</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SD_BladerootHigh</hediffDef>
+				  <severity>0.05</severity>
+				  <toleranceChemical>SD_Bladeroot</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SD_BladerootTolerance</hediffDef>
+				  <severity>0.003</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>SD_Bladeroot</chemical>
+				<addictiveness>0.003</addictiveness>
+				<minToleranceToAddict>0.20</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.006</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<listOrder>500</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_GlimmerQuartz</defName>
+		<label>Nutrient Bar with Glimmer Quartz</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with glimmer quartz.</description>
+		<descriptionHyperlinks>
+          <HediffDef>SD_GlimmerHigh</HediffDef>
+          <HediffDef>SD_GlimmerAddiction</HediffDef>
+        </descriptionHyperlinks>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.07</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SD_GlimmerHigh</hediffDef>
+				  <severity>0.10</severity>
+				  <toleranceChemical>SD_Glimmer</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Food</need>
+				  <offset>0.02</offset>
+				  <toleranceChemical>SD_Glimmer</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>SD_Glimmer</chemical>
+				<addictiveness>0.0025</addictiveness>
+				<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_MinerDelight</defName>
+		<label>Nutrient Bar with Miner's Delight</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with miner's delight.</description>
+		<descriptionHyperlinks>
+          <HediffDef>SD_MDHigh</HediffDef>
+          <HediffDef>PsychiteTolerance</HediffDef>
+          <HediffDef>PsychiteAddiction</HediffDef>
+          <HediffDef>ChemicalDamageSevere</HediffDef>
+        </descriptionHyperlinks>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.07</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SD_MDHigh</hediffDef>
+				  <severity>0.075</severity>
+				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Food</need>
+				  <offset>0.04</offset>
+				  <toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>PsychiteTolerance</hediffDef>
+				  <severity>0.004</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.005</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_RageElixir</defName>
+		<label>Nutrient Bar with Rage Elixir</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with rage elixir.</description>
+		<descriptionHyperlinks>
+          <HediffDef>SD_ElixirHigh</HediffDef>
+          <HediffDef>SD_DwarvenBrewTolerance</HediffDef>
+          <HediffDef>SD_DwarvenBrewAddiction</HediffDef>
+          <HediffDef>SD_HeavyHangover</HediffDef>
+        </descriptionHyperlinks>
+		<graphicData>
+			<!--<color>(111,131,71)</color>-->
+		</graphicData>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.015</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SD_ElixirHigh</hediffDef>
+				  <severity>0.02</severity>
+				  <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Food</need>
+				  <offset>0.04</offset>
+				  <toleranceChemical>SD_DwarvenDrink</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			 <li Class="CompProperties_Drug">
+				<chemical>SD_DwarvenDrink</chemical>
+				<addictiveness>0.0016</addictiveness>
+				<existingAddictionSeverityOffset>0.032</existingAddictionSeverityOffset>
+				<needLevelOffset>0.08</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+			  </li>
+		</comps>
+	</ThingDef>
+
+</Defs>
