@@ -8,5 +8,6 @@
 		<li IfModActive="Mlie.DThermodynamicsHotMeals">1.4/Mods/HotMeals</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech/</li>
 		<li IfModActive="Det.Sbdelights">1.4/Mods/Stoneborn</li>
+		<li IfModActive="Vexedtrees980.Rimgnoblinsbiotech">1.4/Mods/RimGnoblin</li>
 	</v1.4>
 </loadFolders>

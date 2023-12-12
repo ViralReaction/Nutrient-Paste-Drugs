@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VR_NutrientBarBase">
+		<defName>Nutrient_Bar_Shard</defName>
+		<label>Nutrient Bar with Shard</label>
+		<description>A bar of compressed nutrient paste, a full meal you can stick in your pocket. This bar has been infused with shard.</description>
+		<descriptionHyperlinks>
+		  <HediffDef>ShardHigh</HediffDef>
+		  <HediffDef>ShardTolerance</HediffDef>
+		  <HediffDef>ShardAddiction</HediffDef>
+		  <HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Nutrient_Bar_Luciferium</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.055</joy>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>ShardHigh</hediffDef>
+				  <severity>0.072</severity>
+				  <toleranceChemical>Shard</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>ShardTolerance</hediffDef>
+				  <severity>0.004</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+				  <offset>-0.15</offset>
+				</li>				
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Shard</chemical>
+				<addictiveness>0.005</addictiveness>
+				<existingAddictionSeverityOffset>0.030</existingAddictionSeverityOffset>
+				<needLevelOffset>0.09</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>500</listOrder>
+				<overdoseSeverityOffset>0.018~0.040</overdoseSeverityOffset>
+				<largeOverdoseChance>0.0008</largeOverdoseChance>
+			  </li>
+		</comps>
+	</ThingDef>
+
+</Defs>
